@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    position: relative;
+    width: 90%;
+    background-color: blue;
+    height: 550px;
+    margin: auto;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    background-color: green;
+    height: auto;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#sideBar{
+    position: relative;
+    width: 30% ;
+    height: 450px;
+    background-color:aqua ;
+}
+
+#sideBar nav , aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 95%;
+    height: 200px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: red;
+    padding: 5px;
+    
+}
+
+
+
+section{
+    position: relative;
+    width: 70%;
+    height: 450px;
+    background-color: bisque;
+    float: left;
+}
+
+article{
+    position: relative;
+    width: 95%;
+    height: 420px;
+    background-color: white;
+    margin: 10px auto;
+}
+
+article h2{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: lightblue;
+}
+
+article p{
+    position: relative;
+    width: 100%;
+    height: 130px;
+    margin-top: 20px;
+    background-color: goldenrod;
+}
+
+article div{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    background-color: blue;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    clear: left;
+    color: white;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}

@@ -1,0 +1,295 @@
+/* CSS RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  font-family: tahoma;
+}
+
+#fundo {
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  font-family: verdana;
+  margin-top: 30px;
+}
+
+#titulo {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+#menu_acima {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #009;
+  height: 30px;
+}
+
+#menu_acima a {
+  width: 17%;
+  text-align: center;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #009;
+  color: #fff;
+  padding-top: 5px;
+  transition: 0.7s ease-out;
+
+}
+
+#menu_acima a:hover {
+  background-color: #ffffff;
+  color: #009;
+  /* transition: 0.7s all; */
+}
+
+#menu_lateral {
+  position: relative;
+  width: 20%;
+  height: 450px;
+  background-color: #cca;
+  float: left;
+}
+
+#menu_lateral a {
+  width: 90%;
+  height: 25px;
+  text-align: left;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #999;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #bbb;
+  display: block;
+}
+
+#menu_lateral a:hover {
+  background-color: #000;
+  border-color: #f00;
+}
+
+#meio {
+  position: relative;
+  width: 60%;
+  height: 450px;
+  background-color: rgb(255, 255, 255);
+  float: left;
+}
+
+#banner {
+  position: relative;
+  width: 20%;
+  height: 450px;
+  float: left;
+  background-color: #c9c;
+}
+
+#banner img {
+  width: 100%;
+  height: 100%;
+}
+
+#rodape {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  clear: left;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+#titulo2 {
+  position: relative;
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  color: #000;
+}
+
+#imagem {
+  position: relative;
+  width: 95%;
+  margin: auto;
+  height: 160px;
+  background-color: #caa;
+  background-size: 100%;
+  margin-top: 10px;
+}
+
+#texto {
+  position: relative;
+  width: 93%;
+  margin: auto;
+  background-color: #cff;
+  height: 80px;
+  text-align: justify;
+  font-size: 12px;
+  padding: 5px;
+  margin-top: 10px;
+  color: #000;
+}
+
+#figuras {
+  position: relative;
+  width: 95%;
+  margin: auto;
+
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#figuras div {
+  width: 30%;
+  height: 100px;
+  background-color: #666;
+}
+
+#fig1 {
+  background-color: #caa;
+  background-size: 100%;
+}
+
+#fig2 {
+  background-color: #caa;
+  background-size: 100%;
+}
+
+#fig3 {
+  background-color: #caa;
+  background-size: 100%;
+}
+
+#figuras div:hover{
+	transform: scale(1.1);
+  }
+
+
+  /* media query smart phone */
+@media(max-width:480px){
+
+  #fundo{
+    width: 99%;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  #menu_acima{
+    width: 100%;
+    height:310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  #menu_acima a{
+    width: 100%;
+    margin:4px;
+    height: 15px;
+    padding: 15px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+  
+  }
+
+  #imagem , #texto , #menu_lateral , #banner{
+    display: none;
+  }
+
+  #meio{
+    width: 100%;
+    height: auto;
+
+  }
+
+  #titulo2{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+
+  #figuras{
+    /* width: 100%; */
+    height: auto;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #figuras div{
+    width: 90%;
+    height:200px;
+    margin-bottom: 15px;
+  }
+
+
+  /* #rodape{
+    margin: 10px;
+  } */
+}
+
+
+/* media query tablet */
+
+@media screen and (min-width:481px){
+  @media screen and (max-width:720px){
+    #fundo{
+      width: 98%;
+    }
+
+    #menu_acima{
+      height: 50px;
+      /* display: block; */
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #menu_acima a{
+      width: 100%;
+      width: 33.3%;
+      color: #ff0;
+    }
+
+    #menu_lateral , #banner{
+      display: none;
+    }
+
+    #meio{
+      width: 100%;
+
+    }
+
+
+
+  }
+}
+  
