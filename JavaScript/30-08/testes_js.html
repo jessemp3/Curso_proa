@@ -9,14 +9,60 @@
     <h1>Testando js , primeir aula</h1>
 
     <script>
+
+        //instanciar - declarar valor / atribuir o valor
+
+        let pessoa = {
+            nome: 'kaique',
+            age: 19,
+            altura: 1.84,
+            peso: 64,
+            salario: 2700.00
+        }
+
+
+        let eu = [
+            ['jese'],
+            ['19'],
+            ['1.84']
+        ]
+
+        let prof = {
+            nome: 'debora',
+            age: 20, 
+            altura: 1.78,
+            salario: 24000.90
+        }
+
+        document.write(`Nome - ${prof.nome} <br/>  idade - ${prof.age} <br/> altura - ${prof.altura} <br/>  sálario -${prof.salario} <br/>`)
+
+        let name = 'jesse'//string
+        let age = 19 // number , int
+        let altura = 1.84
+        let peso = 64
+        let salario = 2700.00
+
+
         //exibir msg na tela
-        document.writeln('escrevendo na tela')
+        document.writeln(`Sou o ${pessoa.nome} e tenho ${pessoa.age} anos de idade <br/>`)
 
         //exibir msg no console
-        console.log('Exibindo um texto ')
+        console.log(pessoa)
+        console.log(eu[0])
 
         //exibir alert
-        alert('aa')
+        // alert(name)
+
+
+        let num = 12
+        let num2 =  14
+
+
+        let sum = num + num2
+
+        document.write(sum)
+
+
     </script>
   </body>
 </html>

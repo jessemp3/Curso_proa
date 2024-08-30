@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+<body>
+    <h1>media</h1>
+
+    <script>
+        const nota1 = Number(prompt('Digite a primeira nota'))
+        const nota2 = Number(prompt('Digite a segunda nota'))
+        const nota3 = Number(prompt('Digite a terceira nota'))
+        const nota4 = Number(prompt('Digite a quarta nota'))
+
+
+        const media = (nota1 + nota2 + nota3 + nota4) / 4
+
+        if(media >= 6){
+            document.write('Parabéns , você foi aprovado')
+        }else if(media == 5 && media < 6){
+        document.write('Infelizmente você está de recuparação')
+        }else{
+            document.write('Infelizmente você não foi aprovado')
+        }
+
+        alert(media)
+ 
+    </script>
+</body>
+</html>
