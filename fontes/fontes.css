@@ -1,0 +1,19 @@
+@font-face {
+    font-family: font1;
+    src: url('./fonts/BungeeTint-Regular.ttf');
+}
+
+@font-face{
+    font-family: font2;
+    src: url('./fonts/Matemasie-Regular.ttf');
+}
+
+p{
+    font-family: font1;
+    color: red;
+}
+
+.b{
+    font-family: font2;
+    color: black;
+}
