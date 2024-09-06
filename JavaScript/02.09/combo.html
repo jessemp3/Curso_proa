@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combos</title>
+  </head>
+  <body>
+    <h1>Combos</h1>
+
+    <script>
+      const combo = prompt("Escolha um combo: 1 , 2 , 3 , 4 ou 5");
+
+      switch (combo) {
+        case "1":
+          alert(
+            `Você escolheu o combo 1  
+            O combo 1 tem - dois hamburgues , batata media e coca medida`
+          );
+          let confir1 = window.confirm("Você confirma:");
+          if (confir1 == true) {
+            aler('Você confirmou o combo 1')
+          }
+          break;
+        case "2":
+          alert(
+            "Você escolheu o combo 2 o combo 2 tem 1 hambuguer gigante , 1 coca gigante e um nugget gigante"
+          );
+          let confir2 = window.confirm("Você confirma:");
+          if (confir2 == true) {
+            alert(`Você confirmou o combo 2
+                `);
+          }
+          break;
+        case "3":
+          alert(`Você escolheu o combo 3
+            O Combo tem tem 2 Nuggets e 2 battas médias
+        `);
+          let confir3 = window.confirm("Você confirma:");
+          if (confir3 == true) {
+            alert(`Você confirmou o combo 3
+                `);
+          }
+          break;
+        case "4":
+          alert(`Você escolheu o combo 4 
+        O Combo 4 tem 3 Hambuguers pequenos e 3 cocas medias
+        `);
+          let confir4 = window.confirm("Você confirma:");
+          if (confir4 == true) {
+            alert(`Você confirmou o combo 4
+                `);
+          }
+          break;
+        case "5":
+          alert(`Você escolheu o combo 5
+        O Combo 5 tem 2 Hambuguers Gigantes , 2 Cocas Gigantes e 2 Batatas Gigantes
+        `);
+          let confir5 = window.confirm("Você confirma:");
+          if (confir5 == true) {
+            alert(`Você escolheu o combo 5
+                `);
+          }
+          break;
+
+        default:
+          aler("Digite um valor valido!");
+          break;
+      }
+    </script>
+  </body>
+</html>

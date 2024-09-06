@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imc</title>
+</head>
+<body>
+    <h1>imc</h1>
+
+    <script>
+        const peso = Number(prompt('Digite o seu peso :'))
+        const altura = Number(prompt('Digite a sua altura:'))
+
+        const imc = (peso / (altura * altura)).toFixed(2)
+
+        if(imc <= 18.5){
+            alert('Magreza ' + imc)
+        }else if(imc > 18.5 && imc <=  24.9){
+            alert('Normal' + imc)
+        }else if(imc >= 25 && imc <= 29.9){
+            alert('sobrepeso ' + imc)
+        }else if(imc > 29.9 && imc <= 34.9){
+            alert('obesidade grau I ' + imc)
+        }else if(imc > 34.9 && imc <= 39.9){
+            alert('obesidade grau II ' + imc)
+        }else if(imc > 39.9){
+            alert('obesidade grau III ' + imc)
+        }else{
+            alert('entre com um valor valido!')
+        }
+
+    </script>
+</body>
+</html>

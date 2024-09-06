@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorias</title>
+  </head>
+  <body>
+    <h1>Calorias</h1>
+
+    <script>
+      const pratos = prompt(` 
+         prato          |   sobremesa       | bebida 
+1) Vegetariano    | Abacaxi              |Chá
+2) peixe               |Sorvete diete      | Suco de laranja
+3) frango             |mouse diete       | Suco de melão
+4) carne              |mouse chocolate| refrigerante diet
+        `);
+
+      switch (pratos) {
+        case "1":
+          alert("Sua Refeição Vegetariana tem 275cal");
+          break;
+        case "2":
+          alert("Sua Refeição de peixe tem 410cal");
+
+          break;
+        case "3":
+          alert("Sua Refeição de frango tem 520cal");
+
+          break;
+        case "4":
+          alert("Sua Refeição de carne tem 615cal");
+
+          break;
+
+        default:
+            alert('Insira um valor válido!')
+          break;
+      }
+    </script>
+  </body>
+</html>
