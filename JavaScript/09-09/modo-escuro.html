@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link rel="stylesheet" href="./modo-escuro.css">
+    <title>Modo Escuro</title>
+</head>
+<body class="body">
+    <h1 class="title">Testando mudança da cor de fundo body , a cor da fonte e da imagem</h1>
+
+  <p class="text1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquam nisi laborum nemo repellendus. Ratione quia rerum totam nam quae maxime, alias aliquam repudiandae eum, voluptate perspiciatis veniam minima ab.
+  </p>
+
+    <div class="buttons">
+        <button type="button" onclick="modoEscuro()">Modo escuro</button>
+        <button type="button" onclick="modoDaltonico()">Modo daltonico</button>
+        <button type="button" onclick="modoNormal()">Modo normal</button>
+        <button type="button" onclick="modoA()">A+</button>
+    </div>
+
+    <hr>
+
+     <img src="./img/IMG-20230817-WA0004.jpg" class="img" alt="">
+
+   <p class="text2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, maxime quibusdam esse earum tempora in veritatis ipsum laudantium quis, fuga numquam molestiae autem deleniti? Voluptatum dolores modi iusto ipsum eveniet!</p>
+
+
+
+
+    <script>
+
+        function modoEscuro(){
+            document.querySelector('.body').style.backgroundColor = 'black'
+            document.querySelector('.title').style.color = 'white'
+            document.querySelector('.title').innerHTML = 'Modo Escuro'
+            document.querySelector('.text1').style.color = 'white'
+            document.querySelector('.text2').style.color = 'white'
+            document.querySelector('.img').style.filter = 'none '        
+
+
+        
+        }
+
+
+        function modoDaltonico(){
+            document.querySelector('.body').style.backgroundColor = 'purple'
+            document.querySelector('.title').style.color = 'green'
+            document.querySelector('.title').innerHTML = 'Modo Daltonico'
+            document.querySelector('.text1').style.color = 'green'
+            document.querySelector('.text2').style.color = 'green'  
+            document.querySelector('.img').style.filter = 'sepia(90%)'        
+
+        }
+
+        function modoNormal(){
+            document.querySelector('.body').style.backgroundColor = 'white'
+            document.querySelector('.title').style.color = 'black'
+            document.querySelector('.text1').style.color = 'black'
+            document.querySelector('.title').innerHTML = 'Testando mudança da cor de fundo body , a cor da fonte e da imagem'
+
+            document.querySelector('.text2').style.color = 'black'   
+            document.querySelector('.title').style.fontSize = '2rem'
+            document.querySelector('.text1').style.fontSize = '1rem'
+            document.querySelector('.text2').style.fontSize = '1rem' 
+            document.querySelector('.img').style.filter = 'none '        
+
+        }
+
+        function modoA(){
+            document.querySelector('.title').style.fontSize = '2.6rem'
+            document.querySelector('.title').innerHTML = 'Modo A+'
+            document.querySelector('.text1').style.fontSize = '1.6rem'
+            document.querySelector('.text2').style.fontSize = '1.6rem'  
+            document.querySelector('.img').style.filter = 'none '        
+
+
+        }
+
+
+
+    </script>
+</body>
+</html>

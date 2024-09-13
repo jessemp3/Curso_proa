@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mudando-body.css">
+    <title>aula de js 09-09</title>
+</head>
+<body id="change-bg">
+       <h1>Mudando conteudo da tela</h1>
+
+       <button type="button" onclick="changeBg()">Cor verd</button>
+       <button type="button" onclick="changeBgBlue()">Cor Azul</button>
+       <button type="button" onclick="limpar()">Limpars</button>
+       
+       <div>
+            <img src="./img/IMG-20230817-WA0004.jpg" class="change-img" alt="">
+        </div>
+  
+
+      <script>
+
+       let img = document.getElementsByClassName('change-img')
+
+
+        function changeBg(){
+            document.querySelector('#change-bg').style.backgroundColor = '#00ff00'
+
+            document.querySelector('.change-img').src = './img/IMG-20230817-WA0005.jpg'
+            
+        }
+
+
+        function changeBgBlue(){
+            document.querySelector('#change-bg').style.backgroundColor = 'blue'
+
+            document.querySelector('.change-img').src = './img/IMG-20230817-WA0014.jpg'
+
+        }
+
+        function limpar(){
+            document.querySelector('#change-bg').style.backgroundColor = 'bisque'
+
+            document.querySelector('.change-img').src = './img/IMG-20230817-WA0004.jpg'
+
+        }
+
+       </script>
+</body>
+</html>

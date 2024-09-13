@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+}
+
+.btn{
+    padding: 20px;
+    background-color: darkcyan;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: green;
+    color: white;
+}
+
+.popUp-preto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(70, 50, 50, 80%);
+    visibility: hidden;
+}
+
+.modal , img {
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.img{
+    width: 470px;
+    height: 470px;
+}
+
+.fechar{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    float: right;
+    cursor: pointer;
+    border: 1px solid;
+}
