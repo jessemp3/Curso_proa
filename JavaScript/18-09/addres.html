@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+</head>
+<body>
+    <form method="get" action=".">
+        <label for="nome">Seu nome</label>
+        <input type="text" id="nome"><br>
+    
+        <label for="data_nasc">Data de nascimento</label>
+        <input type="date" id="data_nasc"><br>
+    
+        <label for="numero">Número</label>
+        <input type="text" id="numero"><br>
+    
+        <label for="cep">Cep:</label>
+        <input name="cep" type="text" id="cep" size="10" maxlength="9"><br>
+    
+        <button type="button" onclick="pesquisacep()">Buscar CEP</button>
+    </form>
+    
+    <div id="resultado">
+        <p><strong>Rua:</strong> <span id="rua_resultado"></span></p>
+        <p><strong>Bairro:</strong> <span id="bairro_resultado"></span></p>
+        <p><strong>Cidade:</strong> <span id="cidade_resultado"></span></p>
+        <p><strong>Estado:</strong> <span id="uf_resultado"></span></p>
+    </div>
+
+
+      <script src="./addres.js"></script>
+</body>
+</html>
