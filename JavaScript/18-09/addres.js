@@ -1,6 +1,4 @@
 
-
-
 function limpa_formulário_cep() {
     // Limpa os valores nos parágrafos de resultado.
     document.getElementById('rua_resultado').innerText = "";
@@ -67,35 +65,5 @@ function pesquisacep() {
 }
 
 
-
-const naturalidade = {
-    RO: "Rondoniano",
-    AC: "Acriano",
-    AM: "Amazonense",
-    RR: "Roraimense",
-    PA: "Paraibano",
-    AP: "Amapaense",
-    TO: "Tocantinense",
-    MA: "Maranhense",
-    PI: "Piauiense",
-    CE: "Cearense",
-    RN: "Potiguar",
-    PB: "Paraibano",
-    PE: "Pernambucano",
-    AL: "Alagoano",
-    SE: "Sergipano",
-    BA: "Baiano",
-    MG: "Mineiro",
-    ES: "Capixaba",
-    RJ: "Fluminense",
-    SP: "Paulista",
-    PR: "Paraense",
-    SC: "Catarinense",
-    RS: "Gaúcho",
-    MS: "Sul-mato-grossense",
-    MT: "Mato-grossense",
-    GO: "Goiano",
-    DF: "Brasiliense",
-}
 
 

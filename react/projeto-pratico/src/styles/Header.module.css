@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.menu{
+    width: 50%;
+    /* background-color: aqua; */
+}
+
+.menu ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login{
+    width: 150px;
+}
+
+.lupa{
+    width: 30px;
+    height: 30px;
+}
