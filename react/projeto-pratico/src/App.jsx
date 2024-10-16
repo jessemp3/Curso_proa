@@ -5,11 +5,15 @@ import HeroSection from './Components/HeroSection/HeroSection'
 
 function App() {
 
+
+
   return (
     <>
       <Header/>
       <HeroSection/>
       <Footer/>
+      
+
     </>
   )
 }
