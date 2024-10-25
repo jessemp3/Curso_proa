@@ -1,0 +1,28 @@
+<!-- 23.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequência de Fibonacci (do-while)</title>
+</head>
+<body>
+    <h1>Sequência de Fibonacci</h1>
+    <div id="result"></div>
+    <script>
+        let limite = parseInt(prompt('Digite um número:'));
+        let a = 0, b = 1;
+        let result = '0<br>';
+
+        do {
+            let temp = a;
+            a = b;
+            b = temp + b;
+            if (a <= limite) {
+                result += a + '<br>';
+            }
+        } while (a <= limite);
+        document.getElementById('result').innerHTML = result;
+    </script>
+</body>
+</html>

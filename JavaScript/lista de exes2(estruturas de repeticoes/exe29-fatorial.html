@@ -1,0 +1,25 @@
+<!-- 29.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatorial de um Número (do-while)</title>
+</head>
+<body>
+    <h1>Cálculo do Fatorial</h1>
+    <div id="result"></div>
+    <script>
+        let numero = parseInt(prompt('Digite um número inteiro:'));
+        let fatorial = 1;
+        let i = 1;
+
+        do {
+            fatorial *= i;
+            i++;
+        } while (i <= numero);
+        
+        document.getElementById('result').innerHTML = 'Fatorial de ' + numero + ' é ' + fatorial;
+    </script>
+</body>
+</html>

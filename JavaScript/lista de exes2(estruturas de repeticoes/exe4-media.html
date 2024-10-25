@@ -1,0 +1,24 @@
+<!-- 4.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de Números Inteiros</title>
+</head>
+<body>
+    <h1>Média de 5 Números Inteiros</h1>
+    <div id="result"></div>
+    <script>
+        let i = 0;
+        let soma = 0;
+        while (i < 5) {
+            let numero = parseInt(prompt('Digite um número inteiro:'));
+            soma += numero;
+            i++;
+        }
+        let media = soma / 5;
+        document.getElementById('result').innerHTML = 'Média: ' + media;
+    </script>
+</body>
+</html>

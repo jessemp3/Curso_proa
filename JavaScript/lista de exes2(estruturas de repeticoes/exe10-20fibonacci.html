@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci - Primeiros 20 Números</title>
+</head>
+<body>
+    <h1>Primeiros 20 Números da Sequência de Fibonacci</h1>
+    <div id="result"></div>
+    <script>
+        let a = 0, b = 1;
+        let result = '';
+        let count = 0;
+
+        while (count < 20) {
+            result += a + '<br>';
+            let temp = a;
+            a = b;
+            b = temp + b;
+            count++;
+        }
+        document.getElementById('result').innerHTML = result;
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Números de 1 a 10 (do-while)</title>
+</head>
+<body>
+    <h1>Números de 1 a 10</h1>
+    <div id="result"></div>
+    <script>
+        let i = 1;
+        let result = '';
+        do {
+            result += i + '<br>';
+            i++;
+        } while (i <= 10);
+        document.getElementById('result').innerHTML = result;
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Números Pares (for)</title>
+</head>
+<body>
+    <h1>Soma de Números Pares</h1>
+    <div id="result"></div>
+    <script>
+        let numero = parseInt(prompt('Digite um número inteiro:'));
+        let soma = 0;
+
+        for (let i = 2; i <= numero; i += 2) {
+            soma += i;
+        }
+
+        document.getElementById('result').innerHTML = 'Soma dos números pares: ' + soma;
+    </script>
+</body>
+</html>

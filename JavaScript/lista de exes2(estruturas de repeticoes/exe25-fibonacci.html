@@ -1,0 +1,28 @@
+<!-- 25.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros 20 Números da Fibonacci (do-while)</title>
+</head>
+<body>
+    <h1>Primeiros 20 Números da Sequência de Fibonacci</h1>
+    <div id="result"></div>
+    <script>
+        let a = 0, b = 1;
+        let result = '0<br>1<br>';
+        let i = 2;
+
+        do {
+            let temp = a;
+            a = b;
+            b = temp + b;
+            result += a + '<br>';
+            i++;
+        } while (i < 20);
+        
+        document.getElementById('result').innerHTML = result;
+    </script>
+</body>
+</html>

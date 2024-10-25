@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Pares de 1 a 50 (for)</title>
+</head>
+<body>
+    <h1>Números Pares de 1 a 50</h1>
+    <div id="result"></div>
+    <script>
+        let result = '';
+        for (let i = 2; i <= 50; i += 2) {
+            result += i + '<br>';
+        }
+        document.getElementById('result').innerHTML = result;
+    </script>
+</body>
+</html>

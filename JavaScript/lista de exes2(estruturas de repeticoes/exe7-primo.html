@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Primo</title>
+</head>
+<body>
+    <h1>Verificar Número Primo</h1>
+    <div id="result"></div>
+    <script>
+        let numero = parseInt(prompt('Digite um número inteiro:'));
+        let i = 2;
+        let isPrimo = true;
+
+        while (i <= Math.sqrt(numero)) {
+            if (numero % i === 0) {
+                isPrimo = false;
+                break;
+            }
+            i++;
+        }
+        document.getElementById('result').innerHTML = isPrimo ? numero + ' é primo.' : numero + ' não é primo.';
+    </script>
+</body>
+</html>

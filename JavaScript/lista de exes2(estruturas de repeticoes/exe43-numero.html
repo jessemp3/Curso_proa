@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dígitos de um Número (for)</title>
+</head>
+<body>
+    <h1>Dígitos de um Número</h1>
+    <div id="result"></div>
+    <script>
+        let numero = prompt('Digite um número inteiro:');
+        let result = '';
+
+        for (let i = 0; i < numero.length; i++) {
+            result += numero[i] + '<br>';
+        }
+
+        document.getElementById('result').innerHTML = result;
+    </script>
+</body>
+</html>

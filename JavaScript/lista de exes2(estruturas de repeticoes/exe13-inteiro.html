@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dígitos de um Número</title>
+</head>
+<body>
+    <h1>Dígitos de um Número Inteiro</h1>
+    <div id="result"></div>
+    <script>
+        let numero = prompt('Digite um número inteiro:');
+        let i = 0;
+        let result = '';
+
+        while (i < numero.length) {
+            result += numero[i] + '<br>';
+            i++;
+        }
+        document.getElementById('result').innerHTML = result;
+    </script>
+</body>
+</html>
