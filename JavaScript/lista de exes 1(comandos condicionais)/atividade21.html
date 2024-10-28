@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 21 - Parcelamento em 5 Vezes</title>
+</head>
+<body>
+    <h2>Parcelar Valor de Compra em 5 Vezes</h2>
+    <label>Valor da Compra: <input type="number" id="valor" step="0.01"></label><br><br>
+    <button onclick="parcelar()">Parcelar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function parcelar() {
+            const valor = parseFloat(document.getElementById('valor').value);
+            const parcela = valor / 5;
+            document.getElementById('resultado').innerText = 
+                `Valor de cada parcela: R$${parcela.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>

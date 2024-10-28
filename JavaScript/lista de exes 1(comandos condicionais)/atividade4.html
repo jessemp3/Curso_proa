@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4 - Valores Decrescentes</title>
+</head>
+<body>
+    <h2>Exercício 4 - Exibir Valores em Ordem Decrescente</h2>
+    <label>Digite o valor A:</label>
+    <input type="number" id="valorA"><br><br>
+
+    <label>Digite o valor B:</label>
+    <input type="number" id="valorB"><br><br>
+
+    <label>Digite o valor C:</label>
+    <input type="number" id="valorC"><br><br>
+
+    <button onclick="exibirDecrescente()">Exibir em Ordem Decrescente</button>
+    <p id="resultado4"></p>
+
+    <script>
+        function exibirDecrescente() {
+            const valores = [
+                parseFloat(document.getElementById('valorA').value),
+                parseFloat(document.getElementById('valorB').value),
+                parseFloat(document.getElementById('valorC').value)
+            ];
+
+            valores.sort((a, b) => b - a);
+            document.getElementById('resultado4').innerText = `Ordem Decrescente: ${valores.join(', ')}`;
+        }
+    </script>
+</body>
+</html>

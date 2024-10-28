@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 23 - Contar Números em Intervalos</title>
+</head>
+<body>
+    <h2>Contar Números em Intervalos</h2>
+    <div id="inputs"></div><br>
+    <button onclick="contar()">Contar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function criarCampos() {
+            const container = document.getElementById('inputs');
+            for (let i = 0; i < 20; i++) {
+                container.innerHTML += `<input type="number" id="num${i}"><br>`;
+            }
+        }
+
+        function contar() {
+            let intervalo1 = 0, intervalo2 = 0, maiorQue200 = 0;
+            for (let i = 0; i < 20; i++) {
+                const numero = parseInt(document.getElementById(`num${i}`).value) || 0;
+                if (numero >= 0 && numero <= 100) intervalo1++;
+                else if (numero >= 101 && numero <= 200) intervalo2++;
+                else if (numero > 200) maiorQue200++;
+            }
+            document.getElementById('resultado').innerText = 
+                `Entre 0 e 100: ${intervalo1}, Entre 101 e 200: ${intervalo2}, Acima de 200: ${maiorQue200}`;
+        }
+
+        criarCampos();
+    </script>
+</body>
+</html>

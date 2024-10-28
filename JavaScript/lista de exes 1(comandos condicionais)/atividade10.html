@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 10 - Reajuste de Saldo</title>
+</head>
+<body>
+    <h2>Reajuste de Saldo</h2>
+    <label>Digite o saldo: <input type="number" id="saldo"></label><br><br>
+    <button onclick="reajustarSaldo()">Reajustar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function reajustarSaldo() {
+            const saldo = parseFloat(document.getElementById('saldo').value);
+            const saldoReajustado = (saldo * 1.015).toFixed(2);
+            document.getElementById('resultado').innerText = 
+                `Saldo Reajustado: R$${saldoReajustado}`;
+        }
+    </script>
+</body>
+</html>

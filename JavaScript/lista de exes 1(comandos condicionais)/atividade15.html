@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 15 - Soma das Idades</title>
+</head>
+<body>
+    <h2>Soma das Idades de 20 Pessoas</h2>
+    <div id="inputs"></div><br>
+    <button onclick="calcularSoma()">Calcular Soma</button>
+    <p id="resultado"></p>
+
+    <script>
+        function criarCampos() {
+            const container = document.getElementById('inputs');
+            for (let i = 0; i < 20; i++) {
+                const input = document.createElement('input');
+                input.type = 'number';
+                input.id = `idade${i}`;
+                container.appendChild(input);
+                container.appendChild(document.createElement('br'));
+            }
+        }
+
+        function calcularSoma() {
+            let soma = 0;
+            for (let i = 0; i < 20; i++) {
+                soma += parseInt(document.getElementById(`idade${i}`).value) || 0;
+            }
+            document.getElementById('resultado').innerText = `Soma das Idades: ${soma}`;
+        }
+
+        criarCampos();
+    </script>
+</body>
+</html>

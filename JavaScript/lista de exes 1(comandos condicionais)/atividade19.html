@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 19 - Conversão Dólar para Real</title>
+</head>
+<body>
+    <h2>Conversão Dólar para Real</h2>
+    <label>Cotação do Dólar: <input type="number" id="cotacao" step="0.01"></label><br>
+    <label>Quantidade em Dólares: <input type="number" id="quantidade" step="0.01"></label><br><br>
+    <button onclick="converter()">Converter</button>
+    <p id="resultado"></p>
+
+    <script>
+        function converter() {
+            const cotacao = parseFloat(document.getElementById('cotacao').value);
+            const quantidade = parseFloat(document.getElementById('quantidade').value);
+            const valorEmReais = cotacao * quantidade;
+            document.getElementById('resultado').innerText = `Valor em Reais: R$${valorEmReais.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>

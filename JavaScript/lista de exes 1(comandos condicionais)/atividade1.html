@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste</h1>
+    <script>
+  function obterEscolha(mensagem, opcoes) {
+    let escolha;
+    while (true) {
+        escolha = parseInt(prompt(mensagem), 10);
+        if (escolha >= 1 && escolha <= opcoes.length) {
+            return escolha - 1; 
+        } else {
+            alert('Escolha inválida. Tente novamente.');
+        }
+    }
+}
+
+
+const pratos = [
+    { nome: 'Vegetariano', calorias: 180 },
+    { nome: 'Peixe', calorias: 230 },
+    { nome: 'Frango', calorias: 250 },
+    { nome: 'Carne', calorias: 350 }
+];
+
+const sobremesas = [
+    { nome: 'Abacaxi', calorias: 75 },
+    { nome: 'Sorvete diet', calorias: 110 },
+    { nome: 'Mousse diet', calorias: 130 },
+    { nome: 'Mousse chocolate', calorias: 190 }
+];
+
+const bebidas = [
+    { nome: 'Chá', calorias: 20 },
+    { nome: 'Suco de laranja', calorias: 80 },
+    { nome: 'Suco de melão', calorias: 90 },
+    { nome: 'Refrigerante diet', calorias: 65 }
+];
+
+
+const mensagemPrato = `Escolha o prato:\n1 - Vegetariano (180 cal)\n2 - Peixe (230 cal)\n3 - Frango (250 cal)\n4 - Carne (350 cal)`;
+const mensagemSobremesa = `Escolha a sobremesa:\n1 - Abacaxi (75 cal)\n2 - Sorvete diet (110 cal)\n3 - Mousse diet (130 cal)\n4 - Mousse chocolate (190 cal)`;
+const mensagemBebida = `Escolha a bebida:\n1 - Chá (20 cal)\n2 - Suco de laranja (80 cal)\n3 - Suco de melão (90 cal)\n4 - Refrigerante diet (65 cal)`;
+
+let escolhaPrato = obterEscolha(mensagemPrato, pratos);
+let escolhaSobremesa = obterEscolha(mensagemSobremesa, sobremesas);
+let escolhaBebida = obterEscolha(mensagemBebida, bebidas);
+
+
+let totalCalorias = pratos[escolhaPrato].calorias + sobremesas[escolhaSobremesa].calorias + bebidas[escolhaBebida].calorias;
+
+
+alert(`Total de calorias da refeição: ${totalCalorias} cal`);
+    </script>
+</body>
+</html>

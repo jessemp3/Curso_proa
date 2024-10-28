@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 14 - Soma de 10 Números</title>
+</head>
+<body>
+    <h2>Soma de 10 Números</h2>
+    <div id="inputs"></div><br>
+    <button onclick="calcularSoma()">Calcular Soma</button>
+    <p id="resultado"></p>
+
+    <script>
+        function criarCampos() {
+            const container = document.getElementById('inputs');
+            for (let i = 0; i < 10; i++) {
+                const input = document.createElement('input');
+                input.type = 'number';
+                input.id = `num${i}`;
+                container.appendChild(input);
+                container.appendChild(document.createElement('br'));
+            }
+        }
+
+        function calcularSoma() {
+            let soma = 0;
+            for (let i = 0; i < 10; i++) {
+                soma += parseFloat(document.getElementById(`num${i}`).value) || 0;
+            }
+            document.getElementById('resultado').innerText = `Soma: ${soma}`;
+        }
+
+        criarCampos();
+    </script>
+</body>
+</html>

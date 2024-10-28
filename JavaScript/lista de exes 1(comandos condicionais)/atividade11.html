@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 11 - Salário com Comissão</title>
+</head>
+<body>
+    <h2>Salário com Comissão</h2>
+    <label>Nome: <input type="text" id="nome"></label><br>
+    <label>Salário Fixo: <input type="number" id="salarioFixo"></label><br>
+    <label>Total de Vendas: <input type="number" id="vendas"></label><br><br>
+    <button onclick="calcularSalario()">Calcular</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularSalario() {
+            const nome = document.getElementById('nome').value;
+            const salarioFixo = parseFloat(document.getElementById('salarioFixo').value);
+            const vendas = parseFloat(document.getElementById('vendas').value);
+            const comissao = vendas * 0.15;
+            const salarioFinal = salarioFixo + comissao;
+
+            document.getElementById('resultado').innerText = 
+                `Nome: ${nome}, Salário Fixo: R$${salarioFixo.toFixed(2)}, Salário Final: R$${salarioFinal.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>

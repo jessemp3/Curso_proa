@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 18 - Pessoa Mais Nova</title>
+</head>
+<body>
+    <h2>Pessoa Mais Nova</h2>
+    <div id="inputs"></div><br>
+    <button onclick="encontrarMaisNova()">Encontrar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function criarCampos() {
+            const container = document.getElementById('inputs');
+            for (let i = 0; i < 10; i++) {
+                container.innerHTML += `<label>Nome: <input type="text" id="nome${i}"></label>
+                <label>Idade: <input type="number" id="idade${i}"></label><br>`;
+            }
+        }
+
+        function encontrarMaisNova() {
+            let maisNova = { nome: '', idade: Infinity };
+            for (let i = 0; i < 10; i++) {
+                const nome = document.getElementById(`nome${i}`).value;
+                const idade = parseInt(document.getElementById(`idade${i}`).value) || 0;
+                if (idade < maisNova.idade) {
+                    maisNova = { nome, idade };
+                }
+            }
+            document.getElementById('resultado').innerText = `Pessoa mais nova: ${maisNova.nome}, Idade: ${maisNova.idade}`;
+        }
+
+        criarCampos();
+    </script>
+</body>
+</html>

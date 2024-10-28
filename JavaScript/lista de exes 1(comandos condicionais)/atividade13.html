@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 13 - Celsius para Fahrenheit</title>
+</head>
+<body>
+    <h2>Conversão de Celsius para Fahrenheit</h2>
+    <label>Temperatura em Celsius: <input type="number" id="celsius"></label><br><br>
+    <button onclick="converter()">Converter</button>
+    <p id="resultado"></p>
+
+    <script>
+        function converter() {
+            const celsius = parseFloat(document.getElementById('celsius').value);
+            const fahrenheit = (9 * celsius + 160) / 5;
+            document.getElementById('resultado').innerText = 
+                `${celsius}°C é igual a ${fahrenheit.toFixed(2)}°F`;
+        }
+    </script>
+</body>
+</html>

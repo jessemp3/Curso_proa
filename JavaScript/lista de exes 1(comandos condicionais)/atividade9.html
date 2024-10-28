@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 9 - Salários Mínimos</title>
+</head>
+<body>
+    <h2>Quantidade de Salários Mínimos</h2>
+    <label>Digite o valor do seu salário: <input type="number" id="salario"></label><br><br>
+    <button onclick="calcularSalarios()">Calcular</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularSalarios() {
+            const salarioUsuario = parseFloat(document.getElementById('salario').value);
+            const salarioMinimo = 1212.00;
+            const quantidade = (salarioUsuario / salarioMinimo).toFixed(2);
+            document.getElementById('resultado').innerText = 
+                `Você recebe ${quantidade} salários mínimos.`;
+        }
+    </script>
+</body>
+</html>

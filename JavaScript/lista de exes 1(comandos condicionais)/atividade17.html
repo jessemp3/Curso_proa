@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 17 - Contar Maiores de Idade</title>
+</head>
+<body>
+    <h2>Contar Maiores de Idade</h2>
+    <div id="inputs"></div><br>
+    <button onclick="contarMaiores()">Calcular</button>
+    <p id="resultado"></p>
+
+    <script>
+        function criarCampos() {
+            const container = document.getElementById('inputs');
+            for (let i = 0; i < 20; i++) {
+                container.innerHTML += `<label>Idade ${i + 1}: <input type="number" id="idade${i}"></label><br>`;
+            }
+        }
+
+        function contarMaiores() {
+            let contador = 0;
+            for (let i = 0; i < 20; i++) {
+                const idade = parseInt(document.getElementById(`idade${i}`).value) || 0;
+                if (idade >= 18) contador++;
+            }
+            document.getElementById('resultado').innerText = `Número de maiores de idade: ${contador}`;
+        }
+
+        criarCampos();
+    </script>
+</body>
+</html>

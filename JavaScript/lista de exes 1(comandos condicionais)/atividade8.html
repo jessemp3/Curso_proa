@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 8 - Cálculo IPI</title>
+</head>
+<body>
+    <h2>Cálculo do IPI</h2>
+    <label>Porcentagem IPI: <input type="number" id="ipi"></label><br>
+    <label>Código Peça 1: <input type="text" id="cod1"></label><br>
+    <label>Valor Peça 1: <input type="number" id="valor1"></label><br>
+    <label>Quantidade Peça 1: <input type="number" id="quant1"></label><br><br>
+    <label>Código Peça 2: <input type="text" id="cod2"></label><br>
+    <label>Valor Peça 2: <input type="number" id="valor2"></label><br>
+    <label>Quantidade Peça 2: <input type="number" id="quant2"></label><br><br>
+    <button onclick="calcularValorTotal()">Calcular</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularValorTotal() {
+            const ipi = parseFloat(document.getElementById('ipi').value);
+            const valor1 = parseFloat(document.getElementById('valor1').value);
+            const quant1 = parseInt(document.getElementById('quant1').value);
+            const valor2 = parseFloat(document.getElementById('valor2').value);
+            const quant2 = parseInt(document.getElementById('quant2').value);
+
+            const total = (valor1 * quant1 + valor2 * quant2) * (ipi / 100 + 1);
+            document.getElementById('resultado').innerText = `Valor Total: R$${total.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 7 - Médias</title>
+</head>
+<body>
+    <h2>Médias</h2>
+    <button onclick="calcularMedias()">Calcular Médias</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularMedias() {
+            const media1 = (8 + 9 + 7) / 3;
+            const media2 = (4 + 5 + 6) / 3;
+            const somaMedias = media1 + media2;
+            const mediaDasMedias = somaMedias / 2;
+            document.getElementById('resultado').innerText = 
+                `Média 1: ${media1}, Média 2: ${media2}, Soma das Médias: ${somaMedias}, Média das Médias: ${mediaDasMedias}`;
+        }
+    </script>
+</body>
+</html>
