@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let parSum = 0, imparSum = 0, parCount = 0, imparCount = 0;
+        for (let i = 0; i < 5; i++) {
+            let num = parseInt(prompt("Digite um número:"));
+            if (num % 2 === 0) {
+                parSum += num;
+                parCount++;
+            } else {
+                imparSum += num;
+                imparCount++;
+            }
+        }
+        console.log(parSum / parCount, imparSum / imparCount);
+    </script>
+</body>
+
+</html>

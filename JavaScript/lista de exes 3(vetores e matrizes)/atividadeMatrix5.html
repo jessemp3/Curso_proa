@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let matrizNumerica = [], maiorElemento = -Infinity;
+        for (let linha = 0; linha < 3; linha++) {
+            matrizNumerica[linha] = [];
+            for (let coluna = 0; coluna < 3; coluna++) {
+                matrizNumerica[linha][coluna] = parseInt(prompt(`Digite o elemento [${linha}][${coluna}]:`));
+                if (matrizNumerica[linha][coluna] > maiorElemento) maiorElemento = matrizNumerica[linha][coluna];
+            }
+        }
+        console.log("Maior valor:", maiorElemento);
+    </script>
+</body>
+
+</html>

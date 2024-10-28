@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let matrizMinima = [], menorValor = Infinity;
+        for (let linha = 0; linha < 3; linha++) {
+            matrizMinima[linha] = [];
+            for (let coluna = 0; coluna < 3; coluna++) {
+                matrizMinima[linha][coluna] = parseInt(prompt(`Digite o elemento [${linha}][${coluna}]:`));
+                if (matrizMinima[linha][coluna] < menorValor) menorValor = matrizMinima[linha][coluna];
+            }
+        }
+        console.log("Menor valor:", menorValor);
+    </script>
+</body>
+
+</html>

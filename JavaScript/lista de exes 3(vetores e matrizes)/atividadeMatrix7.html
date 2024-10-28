@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let matrizA = [], matrizB = [], produtoMatrizes = [[0, 0], [0, 0]];
+        for (let linha = 0; linha < 2; linha++) {
+            matrizA[linha] = [], matrizB[linha] = [];
+            for (let coluna = 0; coluna < 2; coluna++) {
+                matrizA[linha][coluna] = parseInt(prompt(`Matriz A - elemento [${linha}][${coluna}]:`));
+                matrizB[linha][coluna] = parseInt(prompt(`Matriz B - elemento [${linha}][${coluna}]:`));
+            }
+        }
+        for (let linha = 0; linha < 2; linha++) {
+            for (let coluna = 0; coluna < 2; coluna++) {
+                for (let k = 0; k < 2; k++) {
+                    produtoMatrizes[linha][coluna] += matrizA[linha][k] * matrizB[k][coluna];
+                }
+            }
+        }
+        console.log("Produto das matrizes:", produtoMatrizes)
+    </script>
+</body>
+
+</html>

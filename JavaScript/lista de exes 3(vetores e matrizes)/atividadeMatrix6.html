@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let matrizTotal = [], somaElementos = 0;
+        for (let linha = 0; linha < 4; linha++) {
+            matrizTotal[linha] = [];
+            for (let coluna = 0; coluna < 4; coluna++) {
+                matrizTotal[linha][coluna] = parseInt(prompt(`Digite o elemento [${linha}][${coluna}]:`));
+                somaElementos += matrizTotal[linha][coluna];
+            }
+        }
+        console.log("Média aritmética:", somaElementos / 16);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let posSum = 0, negSum = 0;
+        for (let i = 0; i < 10; i++) {
+            let num = parseInt(prompt("Digite um número:"));
+            if (num > 0) posSum += num;
+            else if (num < 0) negSum += num;
+        }
+        console.log(posSum, negSum);
+    </script>
+</body>
+
+</html>

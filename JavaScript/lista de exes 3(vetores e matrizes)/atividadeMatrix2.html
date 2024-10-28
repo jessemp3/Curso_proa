@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let matrizValores = [], totalValores = 0;
+        for (let l = 0; l < 2; l++) {
+            matrizValores[l] = [];
+            for (let c = 0; c < 2; c++) {
+                matrizValores[l][c] = parseInt(prompt(`Digite o elemento [${l}][${c}]:`));
+                totalValores += matrizValores[l][c];
+            }
+        }
+        console.log("Soma dos elementos:", totalValores);
+    </script>
+</body>
+
+</html>

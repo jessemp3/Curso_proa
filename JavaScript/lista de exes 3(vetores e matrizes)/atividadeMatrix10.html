@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let matrizColuna = [], somaPorColuna = [0, 0, 0, 0];
+        for (let linha = 0; linha < 4; linha++) {
+            matrizColuna[linha] = [];
+            for (let coluna = 0; coluna < 4; coluna++) {
+                matrizColuna[linha][coluna] = parseInt(prompt(`Digite o elemento [${linha}][${coluna}]:`));
+                somaPorColuna[coluna] += matrizColuna[linha][coluna];
+            }
+        }
+        console.log("Soma das colunas:", somaPorColuna);
+    </script>
+</body>
+
+</html>

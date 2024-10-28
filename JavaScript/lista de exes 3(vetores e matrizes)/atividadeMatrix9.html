@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let matrizSimetrica = [], ehSimetrica = true;
+        for (let linha = 0; linha < 3; linha++) {
+            matrizSimetrica[linha] = [];
+            for (let coluna = 0; coluna < 3; coluna++) {
+                matrizSimetrica[linha][coluna] = parseInt(prompt(`Digite o elemento [${linha}][${coluna}]:`));
+            }
+        }
+        for (let linha = 0; linha < 3; linha++) {
+            for (let coluna = 0; coluna < 3; coluna++) {
+                if (matrizSimetrica[linha][coluna] !== matrizSimetrica[coluna][linha]) ehSimetrica = false;
+            }
+        }
+        console.log("A matriz é simétrica?", ehSimetrica);
+    </script>
+</body>
+
+</html>

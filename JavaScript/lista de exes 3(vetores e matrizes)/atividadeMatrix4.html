@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let matrizX = [], matrizY = [], matrizResultado = [];
+        for (let l = 0; l < 2; l++) {
+            matrizX[l] = [], matrizY[l] = [], matrizResultado[l] = [];
+            for (let c = 0; c < 2; c++) {
+                matrizX[l][c] = parseInt(prompt(`Matriz X - elemento [${l}][${c}]:`));
+                matrizY[l][c] = parseInt(prompt(`Matriz Y - elemento [${l}][${c}]:`));
+                matrizResultado[l][c] = matrizX[l][c] + matrizY[l][c];
+            }
+        }
+        console.log("Soma das matrizes:", matrizResultado);
+    </script>
+</body>
+
+</html>

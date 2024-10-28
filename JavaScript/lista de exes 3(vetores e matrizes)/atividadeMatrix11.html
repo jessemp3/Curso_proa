@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let matrizAlpha = [], matrizBeta = [], saoIguais = true;
+        for (let linha = 0; linha < 2; linha++) {
+            matrizAlpha[linha] = [], matrizBeta[linha] = [];
+            for (let coluna = 0; coluna < 2; coluna++) {
+                matrizAlpha[linha][coluna] = parseInt(prompt(`Matriz Alpha - elemento [${linha}][${coluna}]:`));
+                matrizBeta[linha][coluna] = parseInt(prompt(`Matriz Beta - elemento [${linha}][${coluna}]:`));
+                if (matrizAlpha[linha][coluna] !== matrizBeta[linha][coluna]) saoIguais = false;
+            }
+        }
+        console.log("As matrizes são iguais?", saoIguais);
+    </script>
+</body>
+
+</html>

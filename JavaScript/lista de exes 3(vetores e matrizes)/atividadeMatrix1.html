@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let matrizNumeros = [];
+        for (let linha = 0; linha < 3; linha++) {
+            matrizNumeros[linha] = [];
+            for (let coluna = 0; coluna < 3; coluna++) {
+                matrizNumeros[linha][coluna] = parseInt(prompt(`Digite o elemento [${linha}][${coluna}]:`));
+            }
+        }
+
+        console.log(matrizNumeros);
+    </script>
+</body>
+
+</html>

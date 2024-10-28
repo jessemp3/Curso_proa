@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let matrizPrincipal = [], somaDiagonal = 0;
+        for (let linha = 0; linha < 3; linha++) {
+            matrizPrincipal[linha] = [];
+            for (let coluna = 0; coluna < 3; coluna++) {
+                matrizPrincipal[linha][coluna] = parseInt(prompt(`Digite o elemento [${linha}][${coluna}]:`));
+                if (linha === coluna) somaDiagonal += matrizPrincipal[linha][coluna];
+            }
+        }
+        console.log("Soma da diagonal principal:", somaDiagonal);
+    </script>
+</body>
+
+</html>
