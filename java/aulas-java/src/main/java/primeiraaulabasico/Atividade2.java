@@ -21,3 +21,4 @@ public class Atividade2 {
         System.out.println("A média é " + media);
     }
 }
+
